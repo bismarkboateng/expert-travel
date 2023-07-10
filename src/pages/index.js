@@ -1,0 +1,6 @@
+export { default as Flights } from "./Flights"
+export { default as Home } from "./Home"
+export { default as Cars } from "./Cars"
+export { default as Activities } from "./Activities"
+export { default as Signin } from "./Signin"
+export { default as NotFound } from "./NotFound"

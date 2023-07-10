@@ -1,14 +1,12 @@
-import { Navbar, Search, Hero, Gallery, Destinations, Footer } from "../../components"
+import { Search, Hero, Gallery, Destinations } from "../../components"
 
 export default function index() {
     return (
         <section>
-            <Navbar />
             <Search />
             <Hero />
             <Gallery />
             <Destinations />
-            <Footer />
         </section>
     )
 }
