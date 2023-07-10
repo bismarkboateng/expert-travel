@@ -1,11 +1,15 @@
 import { Navbar, Footer } from "./components"
 import { Routes, Route } from "react-router-dom"
 import { Home, Flights, Cars, Activities, NotFound, Signin } from "./pages"
+import "./App.css"
+
+
 
 export default function App() {
     return (
-        <div>
-            <Navbar />
+        <>
+        <Navbar />
+        <div className="app">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/flights" element={<Flights />} />
@@ -16,5 +20,6 @@ export default function App() {
             </Routes>
             <Footer />
         </div>
+        </>
     )
 }
