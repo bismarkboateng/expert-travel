@@ -53,3 +53,43 @@
     align-items: center;
     gap: 20px;
 }
+
+.mob__links {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .mob__links {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .expert__image {
+        width: 90px;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .navbar__content {
+        width: 100%;
+    }
+
+    .mob__item {
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .image__text {
+        font-size: 12px;
+    }
+
+    .navbar__content {
+        padding: 10px 20px;
+    }
+}

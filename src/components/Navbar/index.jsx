@@ -1,7 +1,21 @@
 import NavbarStyles from "./Navbar.module.css"
 import { Links } from "./constants"
+import { useState } from "react";
+import { HiOutlineSearch } from "react-icons/hi";
+import { BsFillBagFill } from "react-icons/bs";
+import { RiAccountCircleFill } from "react-icons/ri";
+
+
+
+
 
 export default function index() {
+    const [ mobile, setMobile ] = useState({
+        search: false,
+        bag: false,
+        profile: false
+    })
+
     return (
         <section className={NavbarStyles.navbarWrapper}>
            <div className={NavbarStyles.navbarContent}>
@@ -17,6 +31,14 @@ export default function index() {
                     </li>
                 )) }
             </ul>
+
+            <ul className={NavbarStyles.mobLinks}>
+                <li className={NavbarStyles.mobItem}><HiOutlineSearch /></li>
+                <li className={NavbarStyles.mobItem}><BsFillBagFill /></li>
+                <li className={NavbarStyles.mobItem}><RiAccountCircleFill /></li>
+
+            </ul>
+
            </div>
         </section>
     )
