@@ -1,0 +1,27 @@
+.flight__search {
+    width: 100%;
+}
+
+.flight__text {
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.flights__unordered {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+}
+
+/* .flights__list {
+    margin-bottom: 5px;
+} */
+
+.flights {
+    height: 10px;
+    width: 400px;
+    background-color: red;
+}
