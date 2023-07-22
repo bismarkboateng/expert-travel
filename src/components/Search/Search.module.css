@@ -1,0 +1,17 @@
+.expert__search {
+    margin-top: 40px;
+    height: 150px;
+    border: 1px solid rgb(161, 156, 156);
+    border-radius: 5px;
+    /* border: 1px solid red; */
+}
+
+.expert__unordered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    gap: 50px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(161, 156, 156);
+}
