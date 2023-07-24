@@ -1,0 +1,42 @@
+.expert__hero {
+    position: relative;
+    width: 100%;
+}
+
+
+.expert__hero__image {
+    width: 100%;
+    margin-top: 50px;
+    object-fit: contain;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.expert__hero__description {
+    position: absolute;
+    top: 35%;
+    margin-left: 30px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 25px;
+    /* backdrop-filter: blur(4px); */
+}
+
+.expert__hero__description__button {
+    color: #fff;
+    background: rgba(7, 63, 247, 0.623);
+    font-weight: 600;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 20px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.expert__hero__description h1 {
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}

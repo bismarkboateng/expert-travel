@@ -1,0 +1,7 @@
+export { default as Image01 } from "./images/image01.avif"
+export { default as Image02 } from "./images/image02.webp"
+export { default as Image03 } from "./images/image03.avif"
+export { default as Image04 } from "./images/image04.avif"
+export { default as Image05 } from "./images/image05.avif"
+export { default as Image06 } from "./images/image06.avif"
+export { default as Image07 } from "./images/image07.avif"
