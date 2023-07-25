@@ -20,11 +20,26 @@ const Links = [
 
 
 export default function index() {
-    const [ mobile, setMobile ] = useState({
-        search: false,
-        bag: false,
-        profile: false
-    })
+    // const [ mobile, setMobile ] = useState({
+    //     search: false,
+    //     bag: false,
+    //     profile: false
+    // })
+
+    function handleAccountClick() {
+        // open a modal for sign up
+        console.log("Account icon clicked")
+    }
+    
+    function handleSearchClick() {
+        // open a modal with flights search and etc
+        console.log("Search icon clicked")
+    }
+
+    function handleBagIconClick() {
+        // navigate to trips ( different route )
+        console.log("Bag icon clicked")
+    }
 
     return (
         <section className={NavbarStyles.navbarWrapper}>
@@ -43,10 +58,9 @@ export default function index() {
             </ul>
 
             <ul className={NavbarStyles.mobLinks}>
-                <li className={NavbarStyles.mobItem}><HiOutlineSearch /></li>
-                <li className={NavbarStyles.mobItem}><BsFillBagFill /></li>
-                <li className={NavbarStyles.mobItem}><RiAccountCircleFill /></li>
-
+                <li className={NavbarStyles.mobItem} onClick={handleSearchClick}><HiOutlineSearch /></li>
+                <li className={NavbarStyles.mobItem} onClick={handleBagIconClick}><BsFillBagFill /></li>
+                <li className={NavbarStyles.mobItem} onClick={handleAccountClick}><RiAccountCircleFill /></li>
             </ul>
 
            </div>
