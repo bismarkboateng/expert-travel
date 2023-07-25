@@ -18,11 +18,13 @@ export default function index() {
             </ul>
 
             <section>
-                <ul className={styles.expertSelect}>
-                    {["Roundtrip", "One-way", "Multi-city"].map((item, index) => (
-                        <li  className={styles.listItem} key={`${item} - ${index}`}>{ item }</li>
-                    ))}
+                <div className={styles.linksInput}>
+                    <ul className={styles.expertSelect}>
+                        {["Roundtrip", "One-way", "Multi-city"].map((item, index) => (
+                            <li  className={styles.listItem} key={`${item} - ${index}`}>{ item }</li>
+                        ))}
 
+                    </ul>
                     <select
                         className={styles.selectChoice}
                         onChange={(event) => setTravelChoice(event.target.value)}
@@ -36,7 +38,7 @@ export default function index() {
                             </option>
                         )) }
                     </select>
-                </ul>
+                </div>
                   <Form />  
             </section>
         </section>
