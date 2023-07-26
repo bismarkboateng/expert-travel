@@ -1,3 +1,11 @@
+:root {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-synthesis: none;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +25,16 @@
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 2000px) {
     .app {
         width: 90%;
         margin: auto;
     }
 }
+
+/* @media screen and (max-width: 1200) {
+    .app {
+        width: 65%;
+        margin: auto;
+    }
+} */

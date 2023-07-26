@@ -6,7 +6,7 @@ import { Image01 } from "../../assets";
 export default function index() {
     return (
         <section className={styles.expertHero}>
-           <img src={Image01} className={styles.expertHeroImage} alt="Hero section image" />
+           {/* <img src={Image01} className={styles.expertHeroImage} alt="Hero section image" /> */}
             <section className={styles.expertHeroDescription}>
                 <h1>One Key rewards</h1>
                 <h1>any way you travel</h1>

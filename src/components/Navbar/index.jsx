@@ -1,6 +1,7 @@
 import NavbarStyles from "./Navbar.module.css"
 // import { Links } from "./constants"
-import { useState } from "react";
+// import { useState } from "react";
+import { Link } from "react-router-dom";
 import { HiOutlineSearch } from "react-icons/hi";
 import { BsFillBagFill } from "react-icons/bs";
 import { BsBellFill } from "react-icons/bs";
@@ -45,7 +46,9 @@ export default function index() {
         <section className={NavbarStyles.navbarWrapper}>
            <div className={NavbarStyles.navbarContent}>
             <div className={NavbarStyles.logoText}>
-                <img src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2&3ec60977" alt="expert travel logo" className={NavbarStyles.expertImage} />
+                <Link style={{ textDecoration: "none"}} to="/">
+                    <img src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2&3ec60977" alt="expert travel logo" className={NavbarStyles.expertImage} />
+                </Link>
                 <small className={NavbarStyles.imageText}>More Travel </small>
             </div>
 

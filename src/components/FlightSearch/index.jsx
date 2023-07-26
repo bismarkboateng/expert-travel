@@ -1,20 +1,32 @@
-import FlightSearchStyles from "./FlightSearch.module.css";
+import styles from "./FlightSearch.module.css";
 import { Choice } from "./constants";
 
 
 export default function index() {
     return (
-        <section className={FlightSearchStyles.flightSearch}>
-            <h1 className={FlightSearchStyles.flightText}>Search flights</h1>
+        <section className={styles.flightSearch}>
+            <div className={styles.flightText}>Search flights</div>
 
-            <ul className={FlightSearchStyles.flightsUnordered}>
+            <ul className={styles.flightsUnordered}>
                 { Choice.map((item) => (
-                    <li className={flightsList} key={item.name}> { item.name }</li>
+                    <li className={styles.flightsList} key={item.name}> { item.name }</li>
                 ))}
-                <li>Economy</li>
+                    <select
+                        className={styles.selectChoice}
+                        onChange={(event) => setTravelChoice(event.target.value)}
+                        value={travelChoice}
+                    >
+                        {["Economy", "First Class", "Premium Economy", "Business Class"].map((item, index) => (
+                            <option
+                                key={`${item}-${index}`} className={styles.fieldChoice}
+                            > 
+                                { item }
+                            </option>
+                        )) }
+                    </select>
 
             </ul>
-            <div className={flights} />
+            <div className={styles.flights} />
         </section>
     )
 }

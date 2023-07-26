@@ -3,9 +3,10 @@
 }
 
 .flight__text {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 50px;
     margin-top: 10px;
+    font-weight: 380;
 }
 
 .flights__unordered {
@@ -19,9 +20,10 @@
 /* .flights__list {
     margin-bottom: 5px;
 } */
-
+ 
 .flights {
     height: 10px;
     width: 400px;
-    background-color: red;
+    border-bottom: 1px solid rgb(211, 204, 204);;
+    margin-bottom: 5px;
 }
