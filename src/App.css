@@ -9,3 +9,17 @@
     width: 65%;
     margin: auto;
 }
+
+@media screen and (max-width: 576px) {
+    .app {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .app {
+        width: 90%;
+        margin: auto;
+    }
+}

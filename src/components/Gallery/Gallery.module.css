@@ -48,3 +48,31 @@
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
+
+@media screen and (max-width: 576px) {
+    .expert__gallery__item {
+        width: 95%;
+
+    }
+    
+    .expert__gallery__second__item {
+        width: 95%;
+    }
+
+    .expert__gallery__item__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .expert__gallery__item__image,
+    .expert__gallery__second__item__image {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .expert__gallery__item {
+        width: 40%;
+    }
+}
