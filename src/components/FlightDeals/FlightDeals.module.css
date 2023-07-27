@@ -1,0 +1,33 @@
+.flight__deals {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.flight__deals__heading {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.flight__deals__unordered {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    gap: 41px;
+}
+
+.flight__deals__item {
+    list-style-type: none;
+}
+
+.flight__deals__image {
+    border-radius: 10px;
+}
+
+.flight__deals__subtitle {
+    color: rgb(119, 105, 105);
+    margin-bottom: 5px;
+}
+
+.flight__deals__title {
+    text-overflow: clip;
+}
