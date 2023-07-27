@@ -1,4 +1,4 @@
-import { FlightSearch, FlightDestination, FlightDeals, Destinations, BookingTips  } from "../../components"
+import { FlightSearch, FlightDestination, FlightDeals, Destinations  } from "../../components"
 
 export default function index() {
     return (
@@ -6,7 +6,6 @@ export default function index() {
             <FlightSearch />
             <FlightDestination />
             <FlightDeals />
-            <BookingTips />
             <Destinations />
         </section>
     )

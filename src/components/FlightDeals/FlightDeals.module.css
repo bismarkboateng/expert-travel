@@ -31,3 +31,37 @@
 .flight__deals__title {
     text-overflow: clip;
 }
+
+
+@media screen and (max-width: 576px) {
+    .flight__deals__heading {
+        font-size: 25px;
+    }
+
+    .flight__deals__unordered {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .flight__deals{
+        border: 1px solid red;
+    }
+
+    .flight__deals__item {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: colu; */
+    }
+
+    .flight__deals__heading {
+        font-size: 35px;
+    }
+
+    .flight__deals__unordered {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

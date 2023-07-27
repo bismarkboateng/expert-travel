@@ -1,0 +1,52 @@
+.booking__tips__wrapper {
+    margin-bottom: 25px;
+    font-family: Roboto;
+}
+
+.booking__tips__header {
+    font-weight: 500;
+
+}
+
+.booking__tips__cta {
+    margin-top: 30px;
+    display: flex;
+    border: 1px solid rgb(206, 198, 198);
+    border-radius: 10px;
+    justify-content: space-between;
+
+}
+
+.booking__tips__image {
+    width: 410px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.booking__tips__content {
+    margin-top: 30px;
+}
+
+.booking__tips__content__header {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+
+.booking__tips__content__text {
+    color: rgb(100, 96, 96);
+    margin-bottom: 70px;
+}
+
+.booking__tips__content__scan {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.booking__tips__qr {
+    margin-top: 30px;
+    margin-right: 10px;
+    height: 150px;
+}

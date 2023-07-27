@@ -1,5 +1,6 @@
 import styles from "./Destinations.module.css";
 import { Image07 } from "../../assets"
+import { BookingTips } from "..";
 
 export default function index() {
 
@@ -12,7 +13,7 @@ export default function index() {
            <img src={Image07} alt="destination image"
                  className={styles.expertDestinationImage}
             />
-
+            <BookingTips />
             <section className={styles.expertDestination}>
                 <p className={styles.expertDestinationTitle}>Explore a world of travel with Expedia</p>
                 <div className={styles.expertDestinationText}>Hotel deals on top domestic destinations</div>
