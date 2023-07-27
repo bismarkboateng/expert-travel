@@ -1,6 +1,7 @@
 import styles from "./Search.module.css";
 import { Form } from "..";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 export default function index() {
@@ -13,7 +14,9 @@ export default function index() {
         <section className={styles.expertSearch}>
             <ul className={styles.expertUnordered}>
                 {["Stays", "Flights", "Cars", "Packages", "Things to do", "Cruises"].map((item, index) => (
-                    <li  className={styles.listItem} key={`${item} - ${index}`}>{ item }</li>
+                    <Link to={`/${item}`} style={{ textDecoration: "none" }}>
+                        <li  className={styles.listItem} key={`${item} - ${index}`}>{ item }</li>
+                    </Link>
                 ))}
             </ul>
 
