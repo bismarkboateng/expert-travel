@@ -15,26 +15,26 @@ export default [
     { 
         Image: Dest03,
         text: "Cancun Flights",
-        index: 3,
+        index: 2,
     },
     { 
         Image: Dest04,
         text: "Miami Flights",
-        index: 4,
+        index: 3,
     },
     { 
         Image: Dest05,
         text: "Honolulu Flights",
-        index: 5,
+        index: 4,
     },
     { 
         Image: Dest06,
         text: "Orlando Flights",
-        index: 6,
+        index: 5,
     },
     { 
         Image: Dest07,
         text: "New York Flights",
-        index: 7,
+        index: 6,
     },
 ]

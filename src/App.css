@@ -1,9 +1,12 @@
 :root {
     font-family: Roboto;
     font-synthesis: none;
+
+    --mobile-screen  : 576px;
+    --tablet-screen  : 768px;
+    --laptop-screen  : 992px;
+    --desktop-screen : 1200px;
 }
-
-
 
 
 * {
@@ -18,19 +21,21 @@
     margin: auto;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: var(--desktop-screen)) {
     .app {
         width: 90%;
         margin: auto;
     }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (max-width: var(--mobile-screen)) {
     .app {
         width: 90%;
         margin: auto;
     }
 }
+
+
 
 /* @media screen and (max-width: 1200) {
     .app {

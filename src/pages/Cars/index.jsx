@@ -1,7 +1,11 @@
+import { Destinations, BookingTips, SearchCarsForm } from "../../components"
+
 export default function index() {
     return (
         <section>
-            Cars Page
+            <SearchCarsForm />
+            <BookingTips />
+            <Destinations />
         </section>
     )
 }
