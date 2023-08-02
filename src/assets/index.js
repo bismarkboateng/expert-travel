@@ -18,3 +18,11 @@ export { default as Dest04 } from "./images/dest04.webp"
 export { default as Dest05 } from "./images/dest05.webp"
 export { default as Dest06 } from "./images/dest06.jpg"
 export { default as Dest07 } from "./images/dest07.jpg"
+
+// car choices export file
+export { default as CarChoice01 } from "./images/CarChoice01.webp"
+export { default as CarChoice02 } from "./images/CarChoice02.webp"
+export { default as CarChoice03 } from "./images/CarChoice03.webp"
+export { default as CarChoice04 } from "./images/CarChoice04.webp"
+export { default as CarChoice05 } from "./images/CarChoice05.webp"
+export { default as CarChoice06 } from "./images/CarChoice06.webp"
