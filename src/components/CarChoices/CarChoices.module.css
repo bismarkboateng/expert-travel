@@ -35,3 +35,39 @@
     font-weight: 500;
     color: #fff;
 }
+
+
+
+@media screen and (max-width: 2000px) {
+    .car__choice__wrapper {    
+        justify-content: space-between;
+    }
+
+    .car__choice__item__text {
+        font-size: 17px;
+        font-weight: 600;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    .car__choice__wrapper {    
+        justify-content: space-between;
+    }
+
+    .car__choice__item__image {
+        width: 140px;
+    }
+
+    .car__choice__item__text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .car__choice__wrapper {
+        overflow: hidden;
+    }
+}

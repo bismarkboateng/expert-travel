@@ -14,7 +14,6 @@
     border: 1px solid rgb(206, 198, 198);
     border-radius: 10px;
     justify-content: space-between;
-
 }
 
 .booking__tips__image {
@@ -49,4 +48,46 @@
     margin-top: 30px;
     margin-right: 10px;
     height: 150px;
+}
+
+@media screen and (max-width: 1400px) {
+    .booking__tips__wrapper {
+        font-size: 15px;
+    }
+
+    .booking__tips__image {
+        width: 250px;
+        height: 250px;
+        margin-right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .booking__tips__image {
+        width: 200px;
+        height: 200px;
+        margin-right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .booking__tips__cta {
+        margin-top: 30px;
+        display: flex;
+        border: 1px solid rgb(206, 198, 198);
+        border-radius: 10px;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .booking__tips__image {
+        width: 400px;
+        margin-right: 10px;
+    }
+
+    .booking__tips__qr {
+        width: 200px;
+    }
 }

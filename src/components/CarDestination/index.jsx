@@ -5,6 +5,7 @@ import Data from "./Data";
 export default function index() {
     return (
         <section>
+            <h1>Trending Rent a Car Destinations </h1>
             <ul className={styles.carDestUnordered}>
                 { Data.map((item) => (
                     <li className={styles.carDestUnorderedItem}>

@@ -21,19 +21,35 @@
     margin: auto;
 }
 
-@media screen and (max-width: var(--desktop-screen)) {
+@media screen and (max-width: 1200px) {
     .app {
         width: 90%;
         margin: auto;
     }
 }
 
-@media screen and (max-width: var(--mobile-screen)) {
+@media screen and (max-width: 992px) {
+    .app {
+        width: 90%;
+        margin: atuo;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .app {
         width: 90%;
         margin: auto;
     }
 }
+
+
+@media screen and (max-width: 576px) {
+    .app {
+        width: 90%;
+        margin: auto;
+    }
+}
+
 
 
 
