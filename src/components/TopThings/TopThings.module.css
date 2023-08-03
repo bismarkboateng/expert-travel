@@ -1,0 +1,31 @@
+.top__wrapper {
+
+}
+
+.top__wrapper__header {
+
+}
+
+.top__unordered {
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+}
+
+.top__unordered__item {
+    list-style-type: none;
+}
+
+.top__unordered__item__image {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.top__unordered__item__title {
+
+}
+
+.top__unordered__item__sub {
+
+}

@@ -1,7 +1,9 @@
+import { TopThings } from "../../components"
+
 export default function index() {
     return (
         <section>
-            Activites page
+        <TopThings />
         </section>
     )
 }

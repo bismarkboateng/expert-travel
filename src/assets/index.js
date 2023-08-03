@@ -35,3 +35,9 @@ export { default as CarDest03 } from "./images/CarDest03.webp"
 export { default as CarDest04 } from "./images/CarDest04.webp"
 export { default as CarDest05 } from "./images/CarDest05.webp"
 export { default as CarDest06 } from "./images/CarDest06.jpg"
+
+
+// top things export file
+export { default as TopThings01 } from "./images/TopThings01.webp"
+export { default as TopThings02 } from "./images/TopThings02.webp"
+export { default as TopThings03 } from "./images/TopThings03.webp"
