@@ -26,3 +26,12 @@ export { default as CarChoice03 } from "./images/CarChoice03.webp"
 export { default as CarChoice04 } from "./images/CarChoice04.webp"
 export { default as CarChoice05 } from "./images/CarChoice05.webp"
 export { default as CarChoice06 } from "./images/CarChoice06.webp"
+
+
+// Car Destinations export file
+export { default as CarDest01 } from "./images/CarDest01.webp"
+export { default as CarDest02 } from "./images/CarDest02.jpg"
+export { default as CarDest03 } from "./images/CarDest03.webp"
+export { default as CarDest04 } from "./images/CarDest04.webp"
+export { default as CarDest05 } from "./images/CarDest05.webp"
+export { default as CarDest06 } from "./images/CarDest06.jpg"
