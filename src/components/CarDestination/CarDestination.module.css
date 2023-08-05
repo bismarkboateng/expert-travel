@@ -22,6 +22,7 @@ section h1 {
 .car__dest__unordered__item__image {
     width: 200px;
     border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .car__dest__unordered__item__text {
@@ -33,6 +34,19 @@ section h1 {
     color: #fff;
 }
 
+.test {
+    width: 100%;
+    /* height: 265px; */
+    padding: 100px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
 
 
 /* Desktop screen*/

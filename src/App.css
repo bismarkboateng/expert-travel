@@ -52,6 +52,30 @@
 
 
 
+.cars-button_text {
+    color: rgb(56, 114, 240);
+    /* width: 200px; */
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.button {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(35, 73, 245);
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 20px;
+    width: 150px;
+    margin-top: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+
+
 
 /* @media screen and (max-width: 1200) {
     .app {

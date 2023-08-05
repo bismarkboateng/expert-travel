@@ -12,7 +12,9 @@ export default function index() {
                 { Data.map((item) => (
                     <li key={item.index} className={styles.carChoiceItem}>
                         <img src={item.image} alt={item.text} className={styles.carChoiceItemImage} />
-                        <p className={styles.carChoiceItemText}>{ item. text }</p>
+                        <div className={styles.test}>
+                            <p className={styles.carChoiceItemText}>{ item. text }</p>
+                        </div>
                     </li>
                 ))}
             </ul>

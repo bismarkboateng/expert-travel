@@ -23,7 +23,7 @@
 .car__choice__item__image {
     width: 200px;
     border-radius: 5px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     filter: grayscale(30%);
 }
 
@@ -34,6 +34,20 @@
     left: 10%;
     font-weight: 500;
     color: #fff;
+}
+
+.test {
+    width: 100%;
+    /* height: 265px; */
+    padding: 100px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 

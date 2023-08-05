@@ -1,0 +1,33 @@
+.button__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.airpot__button__wrapper,
+.rental__button__wrapper {
+    padding: 20px 30px;
+
+    transition: all 400ms ease;
+}
+
+.rental__button__wrapper:hover {
+
+    padding: 20px 30px;
+    border-radius: 20px;
+    color: rgb(27, 9, 185);
+    background: rgb(167, 198, 238);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.airpot__button__wrapper:hover {
+
+    padding: 20px 30px;
+    border-radius: 20px;
+    color: rgb(27, 9, 185);
+    background: rgb(167, 198, 238);
+    font-size: 16px;
+    cursor: pointer;
+}

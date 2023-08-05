@@ -40,6 +40,7 @@ export default function index() {
             <div className={styles.searchCarsRowtwo}>
                 <input
                     placeholder="Pick-up date"
+                    type="date"
                     value=""
                     onChange={() => {}}
                     className={styles.searchCarsRowtwoInput}
@@ -47,12 +48,14 @@ export default function index() {
 
                 <input 
                     placeholder="Drop of date"
+                    type="date"
                     value=""
                     onChange={() => {}}
                     className={styles.searchCarsRowtwoInput}
                 />
                 <input 
                     placeholder="Pick-up time"
+                    type="time"
                     value=""
                     onChange={() => {}}
                     className={styles.searchCarsRowtwoInput}
@@ -60,6 +63,7 @@ export default function index() {
 
                 <input 
                     placeholder="Drop of time"
+                    type="time"
                     value=""
                     onChange={() => {}}
                     className={styles.searchCarsRowtwoInput}

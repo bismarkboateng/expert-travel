@@ -10,7 +10,9 @@ export default function index() {
                 { Data.map((item) => (
                     <li key={item.index} className={styles.carDestUnorderedItem}>
                         <img src={item.image} alt={item.title} className={styles.carDestUnorderedItemImage} />
-                        <p className={styles.carDestUnorderedItemText}> { item.title }</p>
+                        <div className={styles.test}>
+                            <p className={styles.carDestUnorderedItemText}> { item.title }</p>
+                        </div>
                     </li>
                 )) }
             </ul>
