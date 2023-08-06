@@ -1,9 +1,10 @@
-import { TopThings } from "../../components"
+import { TopThings, Travels } from "../../components"
 
 export default function index() {
     return (
         <section>
         <TopThings />
+        <Travels />
         </section>
     )
 }

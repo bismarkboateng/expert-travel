@@ -1,0 +1,37 @@
+.travel {
+    margin-top: 40px;
+}
+
+.travel__header {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.travel__items__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.travel__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.travel__item__image {
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.travel__item__title {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.travel__item__text {
+    margin-top: 10px;
+    color: rgb(94, 82, 82);
+    font-size: 13px;
+}

@@ -41,3 +41,11 @@ export { default as CarDest06 } from "./images/CarDest06.jpg"
 export { default as TopThings01 } from "./images/TopThings01.webp"
 export { default as TopThings02 } from "./images/TopThings02.webp"
 export { default as TopThings03 } from "./images/TopThings03.webp"
+
+
+// travel export image
+export { default as Travels01 } from "./images/Travels01.webp"
+export { default as Travels02 } from "./images/Travels02.webp"
+export { default as Travels03 } from "./images/Travels03.webp"
+export { default as Travels04 } from "./images/Travels04.webp"
+export { default as Travels05 } from "./images/Travels05.webp"
