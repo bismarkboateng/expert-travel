@@ -9,12 +9,12 @@ import { RiAccountCircleFill } from "react-icons/ri";
 
 
 const Links = [
-    {title: "English", index: 0},
-    {title: "List your property", index: 1},
-    {title: "Support", index: 2},
-    {title: "Trips", index: 3},
-    { title: <BsBellFill />, index: 4},
-    {title: "Sign in", index: 5}
+    {title: "English", index: 0, link:""},
+    {title: "List your property", index: 1, link:""},
+    {title: "Support", index: 2, link:""},
+    {title: "Trips", index: 3, link:""},
+    { title: <BsBellFill />, index: 4, link:""},
+    {title: "Sign in", index: 5, link: "/sign-in"}
 ]
 
 
@@ -54,8 +54,10 @@ export default function index() {
 
             <ul className={NavbarStyles.list}>
                 { Links.map((link) => (
-                    <li key={link.index} className={NavbarStyles.listItem}> 
-                        { link.title }
+                    <li key={link.index} className={NavbarStyles.listItem}>
+                        <Link to={link.link} style={{ textDecoration: "none", color: "gray"}}>
+                            { link.title }
+                        </Link>
                     </li>
                 )) }
             </ul>
