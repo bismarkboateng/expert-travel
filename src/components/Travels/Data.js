@@ -1,4 +1,4 @@
-import { Travels01, Travels02, Travels03, Travels05, Traveles06 } from "../../assets";
+import { Travels01, Travels02, Travels03, Travels04, Travels05 } from "../../assets";
 
 
 

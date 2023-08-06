@@ -1,5 +1,6 @@
 .travel {
     margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .travel__header {
@@ -7,6 +8,7 @@
     font-weight: 400;
 }
 
+.second__travel__items__wrapper,
 .travel__items__wrapper {
     display: flex;
     flex-direction: row;
@@ -34,4 +36,15 @@
     margin-top: 10px;
     color: rgb(94, 82, 82);
     font-size: 13px;
+}
+
+.second__travel__items__wrapper {
+    margin-top: 60px;
+    gap: 30px;
+}
+
+.second__travel__item__image {
+    width: 390px;
+    height: 260px;
+    border-radius: 10px;
 }
