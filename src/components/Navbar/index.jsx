@@ -56,7 +56,7 @@ export default function index() {
                 { Links.map((link) => (
                     <li key={link.index} className={NavbarStyles.listItem}>
                         <Link to={link.link} style={{ textDecoration: "none", color: "gray"}}>
-                            { link.title }
+                            <div>{ link.title }</div>
                         </Link>
                     </li>
                 )) }

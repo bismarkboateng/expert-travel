@@ -60,6 +60,13 @@
     display: none;
 }
 
+.list__item div {
+    transition: all 0.3s ease;
+}
+
+.list__item div:hover {
+    color: rgb(61, 61, 228);
+}
 
 
 @media screen and (max-width: 576px) {

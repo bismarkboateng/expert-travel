@@ -8,14 +8,16 @@
 }
 
 .expert__flight__input {
-    padding: 10px 20px 10px 2px;
-    border-radius: 5px;
-    border: 1px solid rgb(196, 191, 191);
+    
+    padding: 10px 50px 10px 2px;
+    outline: none;
+    border: none;
     max-width: 80%;
 }
 
-.expert__flight__input:focus {
-    outline: 1px solid rgb(196, 191, 191);
+.expert__flight__input:focus{
+    border: none;
+    outline: none;
 }
 
 
@@ -37,6 +39,23 @@
     opacity: 0.8;
 }
 
+.input__wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px 20px 4px 2px;
+}
+
+.icon {
+    color: rgb(80, 74, 74);
+    font-size: 23px;
+}
+
+.icon__user {
+    color: rgb(80, 74, 74);
+    font-size: 19px;
+}
 
 @media screen and (max-width: 576px) {
     .expert__flight__form {

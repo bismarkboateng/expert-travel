@@ -1,5 +1,8 @@
 import styles from "./SearchCarsForm.module.css";
 import { useState } from "react";
+import { MdLocationPin } from "react-icons/md";
+import { MdDateRange } from "react-icons/md";
+import { FaUserAlt } from "react-icons/fa";
 
 
 export default function index() {
@@ -22,19 +25,37 @@ export default function index() {
         <form onSubmit={onFormSubmit} className={styles.searchCars}>
 
             <div className={styles.searchCarsRowone}>
-                <input 
-                    placeholder="Pick-up"
-                    value=""
-                    onChange={() => {}}
-                    className={styles.searchCarsRowoneInput}
-                />
 
+                <div className={styles.inputWrapper}>
+                    <i>
+                        <MdLocationPin className={styles.icon} />
+                    </i>
+                    <input 
+                        placeholder="Pick-up"
+                        value=""
+                        onChange={() => {}}
+                        className={styles.searchCarsRowoneInput}
+                    />
+                </div>
+
+                <div className={styles.inputWrapper}>
+                    <i>
+                        <MdLocationPin className={styles.icon} />
+                    </i>
+                    <input 
+                        placeholder="Same as pick-up"
+                        value=""
+                        onChange={() => {}}
+                        className={styles.searchCarsRowoneInput}
+                    />
+                </div>
+{/* 
                 <input 
                     placeholder="Same as pick-up"
                     value=""
                     onChange={() => {}}
                     className={styles.searchCarsRowoneInput}
-                />
+                /> */}
             </div>
             
             <div className={styles.searchCarsRowtwo}>

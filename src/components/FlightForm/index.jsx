@@ -1,6 +1,8 @@
 import styles from "./FlightForm.module.css";
 import { useState } from "react";
-// import { MdLocationOn } from "react-icons/md";
+import { MdLocationPin } from "react-icons/md";
+import { MdDateRange } from "react-icons/md";
+import { FaUserAlt } from "react-icons/fa";
 
 
 export default function index() {
@@ -23,34 +25,53 @@ export default function index() {
     return (
         <form className={styles.expertFlightForm} onSubmit={onFlightFormSubmit}>
 
-            <input
-                placeholder="Leaving from..."
-                onChange={() => handleFlightFieldChange}
-                className={styles.expertFlightInput}
-                value={flightInputFields.leaving}
-            />
+            <div className={styles.inputWrapper}>
+                <i>
+                    <MdLocationPin className={styles.icon} />
+                </i>
+                <input
+                    placeholder="Leaving from..."
+                    onChange={() => handleFlightFieldChange}
+                    className={styles.expertFlightInput}
+                    value={flightInputFields.leaving}
+                />
+            </div>
 
-            <input
-                placeholder="Going to..."
-                onChange={() => handleFlightFieldChange}
-                className={styles.expertFlightInput}
-                value={flightInputFields.going}
-            />
+            <div className={styles.inputWrapper}>
+                <i>
+                    <MdLocationPin className={styles.icon} />
+                </i>
+                <input
+                    placeholder="Going to..."
+                    onChange={() => handleFlightFieldChange}
+                    className={styles.expertFlightInput}
+                    value={flightInputFields.going}
+                />
+            </div>
 
-            <input
-                placeholder="Dates"
-                onChange={() => handleFlightFieldChange}
-                className={styles.expertFlightInput}
-                value={flightInputFields.dates}
-            />
-            
-            <input
-                placeholder="Travelers"
-                onChange={() => handleFlightFieldChange}
-                className={styles.expertFlightInput}
-                value={flightInputFields.travelers}
-            />
+            <div className={styles.inputWrapper}>
+                <i>
+                    <MdDateRange className={styles.icon} />
+                </i>
+                <input
+                    placeholder="Date.."
+                    onChange={() => handleFlightFieldChange}
+                    className={styles.expertFlightInput}
+                    value={flightInputFields.dates}
+                />
+            </div>
 
+            <div className={styles.inputWrapper}>
+                <i>
+                    <FaUserAlt className={styles.iconUser} />
+                </i>
+                <input
+                    placeholder="Travelers"
+                    onChange={() => handleFlightFieldChange}
+                    className={styles.expertFlightInput}
+                    value={flightInputFields.travelers}
+                />
+            </div>
             <button className={styles.expertFlightButton}>
                 Search
             </button>

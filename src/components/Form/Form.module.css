@@ -19,16 +19,38 @@
     cursor: pointer;
 }
 
-.expert__input {
-    border: 1px solid rgb(156, 153, 153);
-    border-radius: 5px;
-    padding: 15px 50px 15px 0px;
-    transition: all 0.3s ease;
+
+.expert__flight__input {
+    
+    padding: 10px 40px 10px 2px;
+    outline: none;
+    border: none;
+    max-width: 80%;
 }
 
-.expert__input:focus {
-    border: 1px solid rgb(48, 48, 235);
-    outline: 1px solid rgb(48, 48, 235);
+.expert__flight__input:focus{
+    border: none;
+    outline: none;
+}
+
+.input__wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px 9px 2px 3px;
+}
+
+.icon {
+    color: rgb(80, 74, 74);
+    font-size: 23px;
+    margin-right: 5px;
+}
+
+.icon__user {
+    color: rgb(80, 74, 74);
+    font-size: 19px;
+    margin-right: 5px;
 }
 
 

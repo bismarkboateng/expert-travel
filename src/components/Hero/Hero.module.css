@@ -1,22 +1,15 @@
 .expert__hero {
     position: relative;
     width: 100%;
-    /* border: 1px solid red; */
     height: 500px;
     margin-top: 30px;
-    margin-bottom: 10px;
-    border: 1px solid red;
-
 }
 
 
-.expert__hero__image {
-    width: 50px;
-    /* height: 100%; */
-    /* object-fit: contain; */
-    border-radius: 15px;
-
-    /* border: 1px solid red; */
+.expert__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 .expert__hero__description {
@@ -27,7 +20,6 @@
     color: #fff;
     font-weight: 600;
     line-height: 25px;
-    /* backdrop-filter: blur(4px); */
 }
 
 .expert__hero__description__button {
@@ -90,60 +82,3 @@
 
     }
 }
-
-/* 
-@media screen and (max-width: 900px) {
-    .expert__hero {
-        width: 90%;
-        height: 250px;
-        margin: auto;
-        margin-top: 30px;
-    }
-    .expert__hero_image {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-
-    }
-
-    .expert__hero__description {
-        margin-left: 10px;
-        top: 20%;
-    }
-
-    .expert__hero__description h1 {
-        font-size: 10px;
-        line-height: 9px;
-    }
-
-    .expert__hero__description p {
-        line-height: 15px;
-        text-overflow: clip;
-    }
-
-    .expert__hero__description__button {
-        font-size: 12px;
-        padding: 10px 10px;
-        font-weight: 400;
-        background: rgba(31, 3, 187, 0.795);
-    }
-} */
-
-
-
-/* @media screen and (max-width: 1200px) {
-    .expert__hero { 
-        width: 90%;
-        height: 300px;
-        margin: auto;
-        margin-top: 30px;
-        border: 1px solid red;
-    }
-
-    .expert__hero__image {
-        width: 500px;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-} */
