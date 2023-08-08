@@ -14,18 +14,36 @@ export default function index() {
     })
 
     function handleFieldChange(event) {
-        // handle input change
+        const { name, value } = event.target;
+        setInputFields(prevFormData => ({...prevFormData, [name]: value}))
     }
+
+    function onFormSubmitHandler(event) {
+        event.preventDefault();
+        console.log(inputFields);
+
+        // after submission of form
+        setInputFields({
+            leaving: "",
+            going: "",
+            dates: "",
+            travelers: ""
+        })
+    }
+
     
+
     return (
-        <form className={styles.expertForm}>
+        <form className={styles.expertForm} onSubmit={onFormSubmitHandler}>
             <div className={styles.inputWrapper}>
                 <i>
                     <MdLocationPin className={styles.icon} />
                 </i>
                 <input
                     placeholder="Leaving from..."
-                    onChange={() => handleFieldChange}
+                    name="leaving"
+                    id="leaving"
+                    onChange={handleFieldChange}
                     className={styles.expertFlightInput}
                     value={inputFields.leaving}
                 />
@@ -37,7 +55,9 @@ export default function index() {
                 </i>
                 <input
                     placeholder="Going to..."
-                    onChange={() => handleFieldChange}
+                    name="going"
+                    id="going"
+                    onChange={handleFieldChange}
                     className={styles.expertFlightInput}
                     value={inputFields.going}
                 />
@@ -49,7 +69,10 @@ export default function index() {
                 </i>
                 <input
                     placeholder="Date.."
-                    onChange={() => handleFieldChange}
+                    type="date"
+                    name="dates"
+                    id="dates"
+                    onChange={handleFieldChange}
                     className={styles.expertFlightInput}
                     value={inputFields.dates}
                 />
@@ -61,13 +84,15 @@ export default function index() {
                 </i>
                 <input
                     placeholder="Travelers"
-                    onChange={() => handleFieldChange}
+                    name="travelers"
+                    id="travelers"
+                    onChange={handleFieldChange}
                     className={styles.expertFlightInput}
                     value={inputFields.travelers}
                 />
             </div>
 
-            <button className={styles.expertButton}>
+            <button type="submit" className={styles.expertButton}>
                 Search
             </button>
         </form>

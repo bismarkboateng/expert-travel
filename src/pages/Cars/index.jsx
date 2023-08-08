@@ -1,5 +1,4 @@
 import { Destinations, CarChoices, SearchCarsForm, CarDestination } from "../../components";
-import Button from "../../components/Button";
 import styles from "./Cars.module.css";
 
 
@@ -24,7 +23,6 @@ export default function index() {
                 </div>
             </div>
             <SearchCarsForm />
-            <Button />
             <CarChoices />
             <CarDestination />
             <Destinations />

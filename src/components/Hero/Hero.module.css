@@ -24,7 +24,7 @@
 
 .expert__hero__description__button {
     color: #fff;
-    background: rgba(7, 63, 247, 0.623);
+    background: rgba(11, 56, 207, 0.623);
     font-weight: 600;
     font-size: 17px;
     border: none;
@@ -36,6 +36,7 @@
 }
 
 .expert__hero__description h1 {
+    color: rgb(105, 103, 103);
     font-size: 40px;
     line-height: 30px;
     margin-bottom: 10px;

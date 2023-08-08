@@ -6,7 +6,7 @@ import { FaUserAlt } from "react-icons/fa";
 
 
 export default function index() {
-    const[flightInputFields, setflightInputFields] = useState({
+    const[flightInputFields, setFlightInputFields] = useState({
         leaving: "",
         going: "",
         dates: "",
@@ -14,14 +14,25 @@ export default function index() {
     })
 
     function handleFlightFieldChange(event) {
-        event.preventDefault();
-        // handle input change
+        const { name, value } = event.target;
+
+        setFlightInputFields(prevFlightForm => ({ ...prevFlightForm, [name]: value}))
     }
 
     function onFlightFormSubmit(event) {
         event.preventDefault();
+
+        console.log(flightInputFields)
+
+        setFlightInputFields({
+            leaving: "",
+            going: "",
+            dates: "",
+            travelers: ""
+        })
     }
     
+
     return (
         <form className={styles.expertFlightForm} onSubmit={onFlightFormSubmit}>
 
@@ -31,7 +42,9 @@ export default function index() {
                 </i>
                 <input
                     placeholder="Leaving from..."
-                    onChange={() => handleFlightFieldChange}
+                    name="leaving"
+                    id="leaving"
+                    onChange={handleFlightFieldChange}
                     className={styles.expertFlightInput}
                     value={flightInputFields.leaving}
                 />
@@ -43,7 +56,9 @@ export default function index() {
                 </i>
                 <input
                     placeholder="Going to..."
-                    onChange={() => handleFlightFieldChange}
+                    name="going"
+                    id="going"
+                    onChange={handleFlightFieldChange}
                     className={styles.expertFlightInput}
                     value={flightInputFields.going}
                 />
@@ -55,7 +70,10 @@ export default function index() {
                 </i>
                 <input
                     placeholder="Date.."
-                    onChange={() => handleFlightFieldChange}
+                    type="date"
+                    name="dates"
+                    id="dates"
+                    onChange={handleFlightFieldChange}
                     className={styles.expertFlightInput}
                     value={flightInputFields.dates}
                 />
@@ -67,7 +85,9 @@ export default function index() {
                 </i>
                 <input
                     placeholder="Travelers"
-                    onChange={() => handleFlightFieldChange}
+                    name="travelers"
+                    id="travelers"
+                    onChange={handleFlightFieldChange}
                     className={styles.expertFlightInput}
                     value={flightInputFields.travelers}
                 />

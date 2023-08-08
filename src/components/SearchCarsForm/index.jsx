@@ -3,22 +3,44 @@ import { useState } from "react";
 import { MdLocationPin } from "react-icons/md";
 import { MdDateRange } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
+import Button from "../../components/Button";
+
+
+
+
 
 
 export default function index() {
-    const[inputFields, setInputFields] = useState({
-        leaving: "",
-        going: "",
-        dates: "",
-        travelers: ""
+    const[carsInputFormField, setCarsInputFormfield] = useState({
+        pickUpLoc: "",
+        samePickUpLoc: "",
+        pickUpDate: "",
+        dropOffDate: "",
+        pickUpTime: "",
+        dropOffTime: ""
     })
 
     function handleFieldChange(event) {
+        const { name, value } = event.target;
+
+        setCarsInputFormfield(prevCarsFormField => ({...prevCarsFormField, [name]: value }))
         // handle input change
     }
 
-    function onFormSubmit() {
+    function onFormSubmit(event) {
+        event.preventDefault();
         // send data to backend api 
+
+        console.log(carsInputFormField);
+
+        setCarsInputFormfield({
+            pickUpLoc: "",
+            samePickUpLoc: "",
+            pickUpDate: "",
+            dropOffDate: "",
+            pickUpTime: "",
+            dropOffTime: ""
+        })
     }
     
     return (
@@ -32,8 +54,10 @@ export default function index() {
                     </i>
                     <input 
                         placeholder="Pick-up"
-                        value=""
-                        onChange={() => {}}
+                        name="pickUpLoc"
+                        id="pickUpLoc"
+                        value={carsInputFormField.pickUpLoc}
+                        onChange={handleFieldChange}
                         className={styles.searchCarsRowoneInput}
                     />
                 </div>
@@ -44,49 +68,52 @@ export default function index() {
                     </i>
                     <input 
                         placeholder="Same as pick-up"
-                        value=""
-                        onChange={() => {}}
+                        name="samePickUpLoc"
+                        id="samePickUpLoc"
+                        value={carsInputFormField.samePickUpLoc}
+                        onChange={handleFieldChange}
                         className={styles.searchCarsRowoneInput}
                     />
                 </div>
-{/* 
-                <input 
-                    placeholder="Same as pick-up"
-                    value=""
-                    onChange={() => {}}
-                    className={styles.searchCarsRowoneInput}
-                /> */}
             </div>
             
             <div className={styles.searchCarsRowtwo}>
                 <input
                     placeholder="Pick-up date"
+                    name="pickUpDate"
+                    id="pickUpDate"
                     type="date"
-                    value=""
-                    onChange={() => {}}
+                    value={carsInputFormField.pickUpDate}
+                    onChange={handleFieldChange}
                     className={styles.searchCarsRowtwoInput}
                 />
 
                 <input 
                     placeholder="Drop of date"
+                    name="dropOffDate"
+                    id="dropOffDate"
                     type="date"
-                    value=""
-                    onChange={() => {}}
+                    value={carsInputFormField.dropOffDate}
+                    onChange={handleFieldChange}
                     className={styles.searchCarsRowtwoInput}
                 />
                 <input 
                     placeholder="Pick-up time"
+                    name="pickUpTime"
+                    id="pickUpTime"
                     type="time"
-                    value=""
-                    onChange={() => {}}
+                    value={carsInputFormField.pickUpTime}
+                    onChange={handleFieldChange}
                     className={styles.searchCarsRowtwoInput}
                 />
 
                 <input 
                     placeholder="Drop of time"
+                    name="dropOffTime"
+                    id="dropOffTime"
                     type="time"
-                    value=""
-                    onChange={() => {}}
+                    value={carsInputFormField.dropOffTime}
+                    onChange={handleFieldChange}
                     className={styles.searchCarsRowtwoInput}
                 />
 
@@ -104,6 +131,7 @@ export default function index() {
                 Membership is required and verified at pick-up.
                 </span>
             </div>
+            <Button />
         </form>
     )
 }
