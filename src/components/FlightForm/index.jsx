@@ -3,6 +3,7 @@ import { useState } from "react";
 import { MdLocationPin } from "react-icons/md";
 import { MdDateRange } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 
 export default function index() {
@@ -12,6 +13,8 @@ export default function index() {
         dates: "",
         travelers: ""
     })
+
+    const navigate = useNavigate();
 
     function handleFlightFieldChange(event) {
         const { name, value } = event.target;
@@ -30,6 +33,11 @@ export default function index() {
             dates: "",
             travelers: ""
         })
+
+        // Note: check if user entered sth, else disable the button
+
+        // after fetching data from a backend api, navigate to the flight search page
+        navigate("/flight-search")
     }
     
 

@@ -1,0 +1,10 @@
+.fav__dates {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    background: #F3F3F5;
+
+    margin-top: 20px;
+    padding: 20px;
+}

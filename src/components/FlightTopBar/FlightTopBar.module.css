@@ -1,0 +1,14 @@
+.flight__top__bar {
+    margin-top: 20px;
+}
+
+.flight__items {
+    display: flex;
+    gap: 30px;
+}
+
+.flight__items li {
+    list-style-type: none;
+    color: rgb(74, 74, 241);
+    font-size: 14px;
+}

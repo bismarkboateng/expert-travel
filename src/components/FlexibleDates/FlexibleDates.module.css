@@ -1,0 +1,15 @@
+.flex__dates {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.flex__dates div div {
+    font-size: 13px;
+}
