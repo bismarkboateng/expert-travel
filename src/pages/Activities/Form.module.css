@@ -44,8 +44,11 @@
 .btn {
     padding: 10px 20px;
     border-radius: 5px;
+    border: 1px solid blue;
     background: rgb(83, 83, 235);
     color: #fff;
+    cursor: pointer;
+    outline: none;
 }
 
 .icon {

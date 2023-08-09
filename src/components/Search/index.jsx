@@ -13,7 +13,7 @@ export default function index() {
     return (
         <section className={styles.expertSearch}>
             <ul className={styles.expertUnordered}>
-                {["Stays", "Flights", "Cars", "Packages", "Things to do", "Cruises"].map((item, index) => (
+                {["Stays", "Flights", "Cars", "Packages", "Activities", "Cruises"].map((item, index) => (
                     <Link to={`/${item}`} style={{ textDecoration: "none" }}>
                         <li  className={styles.listItem} key={`${item} - ${index}`}>{ item }</li>
                     </Link>

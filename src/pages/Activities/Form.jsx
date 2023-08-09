@@ -1,22 +1,48 @@
-// import { useState } from "react"
+import { useState } from "react"
 import styles from "./Form.module.css";
 import { MdLocationPin } from "react-icons/md";
 import { MdDateRange } from "react-icons/md";
 
 
 
+
 export default function Form() {
+  const [searchField, setSearchField] = useState({
+    destination: "",
+    date: ""
+  })
+
+  function handleSearchFieldChange(event) {
+    const { name, value } = event.target;
+    setSearchField(prevSearchField => ({...prevSearchField, [name]: value}))
+  }
+
+
+  function onSearchFieldSearchHanlder(event) {
+    event.preventDefault();
+
+    // just loggin to the console
+    console.log(searchField);
+
+    setSearchField({
+        destination: "",
+        date: ""
+    })
+  }
+
   return (
     <section className={styles.formWrapper}>
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={onSearchFieldSearchHanlder}>
             <div className={styles.formDiv}>
                 <i>
                     <MdLocationPin className={styles.icon} />
                 </i>
                 <input 
                     type="search"
-                    onChange={() => {}}
-                    value=""
+                    name="destination"
+                    id="destination"
+                    onChange={handleSearchFieldChange}
+                    value={searchField.destination}
                     placeholder="Going to"
                     className={styles.input}
                 />
@@ -28,17 +54,19 @@ export default function Form() {
                 </i>
                 <input 
                     type="date"
-                    onChange={() => {}}
-                    value=""
+                    name="date"
+                    id="date"
+                    onChange={handleSearchFieldChange}
+                    value={searchField.date}
                     placeholder="Aug 22 - Aug 23"
                     className={styles.input}
                 />
             </div>
 
             <div className={styles.btnWrapper}>
-                <buttton className={styles.btn}>
+                <button type="submit" className={styles.btn}>
                     Search
-                </buttton>
+                </button>
             </div>
         </form>
     </section>
